@@ -2,6 +2,7 @@
   font-family: "Nunito Sans", system-ui;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -13,22 +14,35 @@
   --body-text: #333333;
   --heart-color: #dc143c;
 }
+
 body {
   background-color: var(--bg_body);
-  
-}
-.website-title{
-  color: var(--brand-primary);
-}
-header > nav{
-  background-color: var(--bg_default);
-  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
 }
 
-@media (max-width: 768px){
+.website-title {
+  color: var(--brand-primary);
+}
+
+header > nav {
+  background-color: var(--bg_default);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
   nav .btn-text {
     display: none;
   }
+}
+
+.dark-mode-button,
+.favourites-button {
+  background-color: var(--bg_default);
+  border-radius: 5px;
+  border: 1.5px solid var(--lines-color);
+  padding: 0.5rem 1rem;
 }
 
 .search-result {
@@ -38,14 +52,15 @@ header > nav{
 
 footer ion-icon {
   color: var(--heart-color);
+  font-size: 23px;
+  top: 0.4rem;
 }
 
 footer {
   text-align: center;
 }
 
-ion-icon{
-  vertical-align: middle;
+ion-icon {
   position: relative;
-  bottom: 0.1em; 
+  top: 0.1rem;
 }
