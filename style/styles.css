@@ -17,24 +17,30 @@
 
 body {
   background-color: var(--bg_body);
+  color: var(--body-text);
 }
 
 .website-title {
   color: var(--brand-primary);
+  font-weight: 700;
 }
 
+#first-line {
+  color: var(--brand-secondary);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#second-line {
+  color: var(--body-text);
+  font-size: 0.9rem;
+
+}
 header > nav {
   background-color: var(--bg_default);
   padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (max-width: 768px) {
-  nav .btn-text {
-    display: none;
-  }
 }
 
 .dark-mode-button,
@@ -45,6 +51,40 @@ header > nav {
   padding: 0.5rem 1rem;
 }
 
+.triangles {
+  position: relative;
+  height: 3vh;
+}
+
+.right-triangle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: clamp(4vh, 5.5vw, 7vh) clamp(50vw, 100vw, 150vw) 0px 0px;
+  border-color: var(--brand-primary) transparent transparent transparent;
+  z-index: 1;
+  left: 0;
+}
+
+.left-triangle {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0px clamp(50vw, 100vw, 150vw) clamp(4vh, 5.5vw, 7vh) 0px;
+  border-color: transparent var(--brand-secondary) transparent;
+  right: 0;
+}
+.container {
+  background-color: var(--bg_default);
+  padding-bottom: 1%;
+}
+.welcome-msg {
+  margin-top: 1%;
+  padding-left: 37%;
+  padding-right: 25%;
+}
 .search-result {
   font-weight: 700;
   font-size: 1.5rem;
@@ -63,4 +103,20 @@ footer {
 ion-icon {
   position: relative;
   top: 0.1rem;
+}
+
+@media (max-width: 768px) {
+  header > nav {
+    padding: 1.5rem 1rem;
+  }
+  nav .btn-text {
+    display: none;
+  }
+  ion-icon {
+    font-size: 20px;
+  }
+  .welcome-msg {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
