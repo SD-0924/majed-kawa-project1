@@ -33,7 +33,6 @@ body {
 #second-line {
   color: var(--body-text);
   font-size: 0.9rem;
-
 }
 header > nav {
   background-color: var(--bg_default);
@@ -83,7 +82,55 @@ header > nav {
 .welcome-msg {
   margin-top: 1%;
   padding-left: 37%;
-  padding-right: 25%;
+  padding-right: 20%;
+}
+
+.search-bar-container {
+  display: flex;
+  border: solid 1px var(--lines-color);
+  margin: 1rem 3rem;
+  background-color: var(--bg_default);
+  border-radius: 9px;
+  box-shadow: 1px 1px 5px 0.5px var(--lines-color);
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 0.9vw;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  border: 0;
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  font-weight: 700;
+}
+
+.sorting-preference,
+.filtering-preference {
+  border-style: solid;
+  border-color: var(--lines-color);
+  border-width: 0px 0px 0px 0.1px;
+  padding: 1vh 0.5vw;
+}
+
+.sorting-preference label,
+.filtering-preference label {
+  font-size: 0.7rem;
+  display: block;
+}
+
+.sorting-preference select,
+.filtering-preference select {
+  padding: 0 8vw 0 0;
+  border: none;
+  appearance: none;
 }
 .search-result {
   font-weight: 700;
@@ -91,6 +138,7 @@ header > nav {
 }
 
 footer ion-icon {
+  position: relative;
   color: var(--heart-color);
   font-size: 23px;
   top: 0.4rem;
@@ -100,14 +148,14 @@ footer {
   text-align: center;
 }
 
-ion-icon {
+button ion-icon {
   position: relative;
   top: 0.1rem;
 }
 
 @media (max-width: 768px) {
   header > nav {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
   }
   nav .btn-text {
     display: none;
@@ -116,7 +164,6 @@ ion-icon {
     font-size: 20px;
   }
   .welcome-msg {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.8rem 1rem;
   }
 }

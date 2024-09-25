@@ -35,11 +35,37 @@
         </div>
         <div class="welcome-msg">
           <p id="first-line">Welcome to our website!</p>
-          <p id="second-line">We have a new design that's fresh, modern, and easy to use.</p>
+          <p id="second-line">
+            We have a new design that's fresh, modern, and easy to use.
+          </p>
         </div>
       </div>
     </header>
     <main>
+      <div class="search-bar-container">
+        <div class="search-bar">
+          <ion-icon name="search-outline"></ion-icon>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search the website..."
+          />
+        </div>
+        <div class="sorting-preference">
+          <label for="sort">Sort by:</label>
+          <select name="sort" id="sort">
+            <option value="">Default</option>
+          </select>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+        <div class="filtering-preference">
+          <label for="filter">Filter by:</label>
+          <select name="filter" id="filter">
+            <option value="">Default</option>
+          </select>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+      </div>
       <p class="search-result">"24" Web Topics Found</p>
     </main>
     <footer>
