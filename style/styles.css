@@ -20,6 +20,12 @@ body {
   color: var(--body-text);
 }
 
+.main-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .website-title {
   color: var(--brand-primary);
   font-weight: 700;
@@ -41,13 +47,20 @@ header > nav {
   justify-content: space-between;
   align-items: center;
 }
+.right-buttons{
+  display: flex;
+  gap: 1vh;
+}
 
 .dark-mode-button,
 .favourites-button {
   background-color: var(--bg_default);
   border-radius: 5px;
   border: 1.5px solid var(--lines-color);
-  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.6rem; 
+  gap: 0.3rem;
 }
 
 .triangles {
@@ -60,7 +73,7 @@ header > nav {
   height: 0;
   width: 0;
   border-style: solid;
-  border-width: clamp(4vh, 5.5vw, 7vh) clamp(50vw, 100vw, 150vw) 0px 0px;
+  border-width: clamp(4vh, 5.5vw, 7vh) clamp(50vw, 90vw, 100vw) 0px 0px;
   border-color: var(--brand-primary) transparent transparent transparent;
   z-index: 1;
   left: 0;
@@ -71,7 +84,7 @@ header > nav {
   height: 0;
   width: 0;
   border-style: solid;
-  border-width: 0px clamp(50vw, 100vw, 150vw) clamp(4vh, 5.5vw, 7vh) 0px;
+  border-width: 0px clamp(50vw, 90vw, 100vw) clamp(4vh, 5.5vw, 7vh) 0px;
   border-color: transparent var(--brand-secondary) transparent;
   right: 0;
 }
@@ -88,7 +101,6 @@ header > nav {
 .search-bar-container {
   display: flex;
   border: solid 1px var(--lines-color);
-  margin: 1rem 3rem;
   background-color: var(--bg_default);
   border-radius: 9px;
   box-shadow: 1px 1px 5px 0.5px var(--lines-color);
@@ -132,25 +144,26 @@ header > nav {
   border: none;
   appearance: none;
 }
+
+main{
+  padding: 1rem 3rem;
+  flex-grow: 1;
+}
+
 .search-result {
   font-weight: 700;
   font-size: 1.5rem;
 }
 
 footer ion-icon {
-  position: relative;
   color: var(--heart-color);
   font-size: 23px;
-  top: 0.4rem;
 }
 
 footer {
-  text-align: center;
-}
-
-button ion-icon {
-  position: relative;
-  top: 0.1rem;
+  display: flex;
+  justify-content: center;
+  margin: 2vh 0;
 }
 
 @media (max-width: 768px) {
