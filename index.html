@@ -1,86 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/styles.css" />
-  </head>
-  <body>
-    <div class="main-container">
-    <header>
-      <nav>
-        <span class="website-title">Web Topics</span>
-        <span class="right-buttons">
-          <button class="dark-mode-button">
-            <ion-icon name="moon-outline"></ion-icon
-            ><span class="btn-text"> Dark Mode</span>
-          </button>
-          <button class="favourites-button">
-            <ion-icon name="heart-outline"></ion-icon
-            ><span class="btn-text"> Favourites</span>
-          </button>
-        </span>
-      </nav>
-      <div class="container">
-        <div class="triangles">
-          <div class="right-triangle"></div>
-          <div class="left-triangle"></div>
-        </div>
-        <div class="welcome-msg">
-          <p id="first-line">Welcome to our website!</p>
-          <p id="second-line">
-            We have a new design that's fresh, modern, and easy to use.
-          </p>
-        </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>First project</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="style/styles.css" />
+   </head>
+   <body>
+      <div class="main-container">
+         <header>
+            <nav>
+               <span class="website-title">Web Topics</span>
+               <span class="right-buttons">
+                  <button class="dark-mode-button">
+                     <ion-icon name="moon-outline"></ion-icon
+                        >
+                     <span class="btn-text"> Dark Mode</span>
+                  </button>
+                  <button class="favourites-button">
+                     <ion-icon name="heart-outline"></ion-icon
+                        >
+                     <span class="btn-text"> Favourites</span>
+                  </button>
+               </span>
+            </nav>
+            <div class="container">
+               <div class="triangles">
+                  <div class="right-triangle"></div>
+                  <div class="left-triangle"></div>
+               </div>
+               <div class="welcome-msg">
+                  <p id="first-line">Welcome to our website!</p>
+                  <p id="second-line">
+                     We have a new design that's fresh, modern, and easy to use.
+                  </p>
+               </div>
+            </div>
+         </header>
+         <main>
+            <div class="search-bar-container">
+               <div class="search-bar">
+                  <ion-icon name="search-outline"></ion-icon>
+                  <input
+                     type="text"
+                     class="search-input"
+                     placeholder="Search the website..."
+                     />
+               </div>
+               <div class="sorting-preference">
+                  <label for="sort">Sort by:</label>
+                  <select name="sort" id="sort">
+                     <option value="">Default</option>
+                  </select>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+               </div>
+               <div class="filtering-preference">
+                  <label for="filter">Filter by:</label>
+                  <select name="filter" id="filter">
+                     <option value="">Default</option>
+                  </select>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+               </div>
+            </div>
+            <p class="search-result">"24" Web Topics Found</p>
+            <div class="topics-container">
+               <div class="topic-card">
+                  <div class="card-image">
+                     <img src="assets/images/html.png" alt="Computer screen that displays HTML">
+                  </div>
+                  <div class="card-details">
+                     <p class="topic-type">Web Development Languages</p>
+                     <p class="topic-title">HTML</p>
+                     <div class="topic-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                     </div>
+                     <p>Author: <span class="author-name">Sarah Smith</span></p>
+                  </div>
+               </div>
+               <div class="topic-card">
+                  <div class="card-image">
+                     <img src="assets/images/html.png" alt="Computer screen that displays HTML">
+                  </div>
+                  <div class="card-details">
+                     <p class="topic-type">Web Development Languages</p>
+                     <p class="topic-title">HTML</p>
+                     <div class="topic-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                     </div>
+                     <p>Author: <span class="author-name">Sarah Smith</span></p>
+                  </div>
+               </div>
+               <div class="topic-card">
+                  <div class="card-image">
+                     <img src="assets/images/html.png" alt="Computer screen that displays HTML">
+                  </div>
+                  <div class="card-details">
+                     <p class="topic-type">Web Development Languages</p>
+                     <p class="topic-title">HTML</p>
+                     <div class="topic-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                     </div>
+                     <p >Author: <span class="author-name">Sarah Smith</span></p>
+                  </div>
+               </div>
+               <div class="topic-card">
+                  <div class="card-image">
+                     <img src="assets/images/html.png" alt="Computer screen that displays HTML">
+                  </div>
+                  <div class="card-details">
+                     <p class="topic-type">Web Development Languages</p>
+                     <p class="topic-title">HTML</p>
+                     <div class="topic-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                     </div>
+                     <p >Author: <span class="author-name">Sarah Smith</span></p>
+                  </div>
+               </div>
+               <div class="topic-card">
+                  <div class="card-image">
+                     <img src="assets/images/html.png" alt="Computer screen that displays HTML">
+                  </div>
+                  <div class="card-details">
+                     <p class="topic-type">Web Development Languages</p>
+                     <p class="topic-title">HTML</p>
+                     <div class="topic-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                     </div>
+                     <p >Author: <span class="author-name">Sarah Smith</span></p>
+                  </div>
+               </div>
+               <div class="topic-card">
+                  <div class="card-image">
+                     <img src="assets/images/html.png" alt="Computer screen that displays HTML">
+                  </div>
+                  <div class="card-details">
+                     <p class="topic-type">Web Development Languages</p>
+                     <p class="topic-title">HTML</p>
+                     <div class="topic-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                     </div>
+                     <p >Author: <span class="author-name">Sarah Smith</span></p>
+                  </div>
+               </div>
+            </div>
+      </main>
+      <footer>
+         <p>Developed with</p>
+         <ion-icon name="heart"></ion-icon>
+         <p>© 2023</p>
+      </footer>
       </div>
-    </header>
-    <main>
-      <div class="search-bar-container">
-        <div class="search-bar">
-          <ion-icon name="search-outline"></ion-icon>
-          <input
-            type="text"
-            class="search-input"
-            placeholder="Search the website..."
-          />
-        </div>
-        <div class="sorting-preference">
-          <label for="sort">Sort by:</label>
-          <select name="sort" id="sort">
-            <option value="">Default</option>
-          </select>
-          <ion-icon name="chevron-down-outline"></ion-icon>
-        </div>
-        <div class="filtering-preference">
-          <label for="filter">Filter by:</label>
-          <select name="filter" id="filter">
-            <option value="">Default</option>
-          </select>
-          <ion-icon name="chevron-down-outline"></ion-icon>
-        </div>
-      </div>
-      <p class="search-result">"24" Web Topics Found</p>
-    </main>
-    <footer>
-      <p>Developed with</p>
-      <ion-icon name="heart"></ion-icon>
-      <p>© 2023</p>
-    </footer>
-  </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+         ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+         ></script>
+   </body>
 </html>
