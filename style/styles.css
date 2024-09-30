@@ -43,11 +43,18 @@ body {
 }
 header > nav {
   background-color: var(--bg_default);
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav{
+  flex-grow: 1;
   padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  max-width: 1440px;
 }
+
 .right-buttons{
   display: flex;
   gap: 1vh;
@@ -108,7 +115,7 @@ header > nav {
 }
 
 .search-bar {
-  flex-grow: 1;
+  flex-grow: 6;
   display: flex;
   align-items: center;
   padding-left: 0.9vw;
@@ -127,23 +134,34 @@ header > nav {
 
 .sorting-preference,
 .filtering-preference {
+  flex-grow: 1;
   border-style: solid;
   border-color: var(--lines-color);
   border-width: 0px 0px 0px 0.1px;
-  padding: 1vh 0.5vw;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-column{
+  display: flex;
+  flex-direction: column;
 }
 
 .sorting-preference label,
 .filtering-preference label {
   font-size: 0.7rem;
-  display: block;
 }
 
 .sorting-preference select,
 .filtering-preference select {
-  padding: 0 8vw 0 0;
   border: none;
   appearance: none;
+}
+
+.sorting-preference ion-icon,
+.filtering-preference ion-icon {
+  align-self: flex-end;
 }
 
 main{
@@ -152,6 +170,8 @@ main{
   gap: 2vh;
   padding: 1rem 3rem;
   flex-grow: 1;
+  max-width: 1440px;
+  align-self: center;
 }
 
 .search-result {
@@ -171,7 +191,6 @@ main{
   flex-direction: column;
   width: 240px;
   height: 290px;
-  /* border: 1px solid var(--lines-color); */
   box-shadow: 1px 1px 5px var(--lines-color);
   background-color: var(--bg_default);
   border-radius: 6px;
