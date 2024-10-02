@@ -16,6 +16,13 @@
   --star-color: #e99a16;
 }
 
+html:has(#dark-mode-toggle:checked) {
+  --bg_default: #1a1a1a;
+  --bg_body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+}
+
 body {
   background-color: var(--bg_body);
   color: var(--body-text);
@@ -69,6 +76,11 @@ header > nav {
   align-items: center;
   padding: 0.3rem 0.6rem;
   gap: 0.3rem;
+  color: var(--body-text);
+}
+
+#dark-mode-toggle {
+  appearance: none;
 }
 
 .triangles {
@@ -133,6 +145,7 @@ header > nav {
   padding: 0.8rem;
   border: 0;
   font-size: 1rem;
+  background-color: var(--bg_default);
 }
 
 .search-input::placeholder {
@@ -165,6 +178,8 @@ header > nav {
 .filtering-preference select {
   border: none;
   appearance: none;
+  background-color: var(--bg_default);
+  color: var(--body-text);
 }
 
 .sorting-preference ion-icon,
