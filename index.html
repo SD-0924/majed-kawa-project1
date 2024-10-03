@@ -21,14 +21,17 @@
             <span class="right-buttons">
               <button class="dark-mode-button">
                 <label>
-                <ion-icon name="moon-outline"></ion-icon>
+                  <ion-icon name="moon-outline"></ion-icon>
                   <input type="checkbox" id="dark-mode-toggle" />
                   <span class="btn-text"> Dark Mode</span>
                 </label>
               </button>
               <button class="favourites-button">
-                <ion-icon name="heart-outline"></ion-icon>
-                <span class="btn-text"> Favourites</span>
+                <label>
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <input type="checkbox" id="favourites-toggle" />
+                  <span class="btn-text"> Favourites</span>
+                </label>
               </button>
             </span>
           </div>
@@ -206,6 +209,49 @@
         <ion-icon name="heart"></ion-icon>
         <p>© 2023</p>
       </footer>
+    </div>
+    <div class="favourites-container">
+      <div class="favourites-wrapper">
+        <p class="favourite-topics-header">My Favourite Topics</p>
+        <div class="favourites-topics-container">
+          <div class="favourite-topic-card">
+            <div class="card-image">
+              <img
+                src="assets/images/html.png"
+                alt="Computer screen that displays HTML"
+              />
+            </div>
+            <div class="fav-card-details">
+              <p class="topic-title">HTML</p>
+              <div class="fav-topic-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="favourite-topic-card">
+            <div class="card-image">
+              <img
+                src="assets/images/html.png"
+                alt="Computer screen that displays HTML"
+              />
+            </div>
+            <div class="fav-card-details">
+              <p class="topic-title">HTML</p>
+              <div class="fav-topic-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       type="module"
