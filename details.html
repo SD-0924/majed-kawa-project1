@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="style/details.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <nav>
+          <div class="top-nav">
+            <span class="website-title">Web Topics</span>
+            <span class="right-buttons">
+              <button class="dark-mode-button">
+                <label>
+                  <ion-icon name="moon-outline"></ion-icon>
+                  <input type="checkbox" id="dark-mode-toggle" />
+                  <span class="btn-text"> Dark Mode</span>
+                </label>
+              </button>
+              <button class="favourites-button">
+                <label>
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <input type="checkbox" id="favourites-toggle" />
+                  <span class="btn-text"> Favourites</span>
+                </label>
+              </button>
+            </span>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="triangles">
+            <div class="right-triangle"></div>
+            <div class="left-triangle"></div>
+          </div>
+          <div class="welcome-container">
+            <div class="welcome-msg">
+              <p id="first-line">Welcome to our website!</p>
+              <p id="second-line">
+                We have a new design that's fresh, modern, and easy to use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="topic-explanation">
+            <div class="topic-explanation-main">
+              <div class="details-topic">
+                <p class="details-category">Web Development Languages</p>
+                <p class="details-topic-title">HTML</p>
+                <div class="details-topic-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <span
+                  >HTML (Hypertext Markup Language) is the standard markup language
+                  for creating web pages and other information that can be displayed
+                  in a web browser. It provides a structure for content and defines
+                  how it should be displayed on a web page, including text, images,
+                  and multimedia. HTML is essential for creating static web pages
+                  and is a foundational technology for the World Wide Web.</span
+                >
+                <div class="Sub-topics">
+                    <p class="details-sub-topic">Web Development Languages</p>
+                    <p class="details-sub-topic">Web Development Languages</p>
+                    <p class="details-sub-topic">Web Development Languages</p>
+                    <p class="details-sub-topic">Web Development Languages</p>
+                    <p class="details-sub-topic">Web Development Languages</p>
+                </div>
+              </div>
+              <div class="details-topics-container">
+                <div class="topic-card">
+                  <div class="card-image">
+                    <img
+                      src="assets/images/html.png"
+                      alt="Computer screen that displays HTML"
+                    />
+                  </div>
+                  <div class="card-details">
+                    <p class="topic-type">Web Development Languages</p>
+                    <p class="topic-title">HTML</p>
+                    <div class="topic-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <p>Author: <span class="author-name">Sarah Smith</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+      <footer>
+        <p>Developed with</p>
+        <ion-icon name="heart"></ion-icon>
+        <p>© 2023</p>
+      </footer>
+    </div>
+    <div class="favourites-container">
+      <div class="favourites-wrapper">
+        <p class="favourite-topics-header">My Favourite Topics</p>
+        <div class="favourites-topics-container">
+          <div class="favourite-topic-card">
+            <div class="card-image">
+              <img
+                src="assets/images/html.png"
+                alt="Computer screen that displays HTML"
+              />
+            </div>
+            <div class="fav-card-details">
+              <p class="topic-title">HTML</p>
+              <div class="fav-topic-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="favourite-topic-card">
+            <div class="card-image">
+              <img
+                src="assets/images/html.png"
+                alt="Computer screen that displays HTML"
+              />
+            </div>
+            <div class="fav-card-details">
+              <p class="topic-title">HTML</p>
+              <div class="fav-topic-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
